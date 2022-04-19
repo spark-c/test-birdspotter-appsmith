@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "listUtils",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\thandleListItemClick: async(bird) => {\n\t\tawait utils.setSelectedBird(bird)\n\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_listUtils",
+  "deleted": false,
+  "gitSyncId": "625706350d3d384069c08790_62585ad00d3d384069c0ed66"
+}
