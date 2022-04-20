@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\thandleListItemClick: async(bird) => {\n\t\tawait utils.setSelectedBird(bird)\n\t\t\n\t}\n}",
+    "body": "export default {\n\thandleListItemClick: async(bird=null) => {\n\t\tif (bird === null || bird === \"No Results\") {\n\t\t\treturn\n\t\t}\n\t\tawait utils.setSelectedBird(bird)\n\t}\n}",
     "variables": []
   },
   "id": "Page1_listUtils",
