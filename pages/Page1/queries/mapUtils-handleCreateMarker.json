@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setSelectedBird",
-    "fullyQualifiedName": "utils.setSelectedBird",
+    "name": "handleCreateMarker",
+    "fullyQualifiedName": "mapUtils.handleCreateMarker",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,17 +14,13 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_utils",
+    "collectionId": "Page1_mapUtils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async (bird) => {\n\t\tawait storeValue(\"selectedBird\", bird)\n\t\tawait utils.updateBirdInfo()\n\t}",
-      "jsArguments": [
-        {
-          "name": "bird"
-        }
-      ],
+      "body": "async() => {\n\t\tawait storeValue(\"lat\", Locator.selectedMarker.lat);\n\t\tawait storeValue(\"long\", Locator.selectedMarker.long);\n\t\tgetRecentNearby.run()\n\t}",
+      "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
@@ -37,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async (bird) => {\n\t\tawait storeValue(\"selectedBird\", bird)\n\t\tawait utils.updateBirdInfo()\n\t}"
+      "async() => {\n\t\tawait storeValue(\"lat\", Locator.selectedMarker.lat);\n\t\tawait storeValue(\"long\", Locator.selectedMarker.long);\n\t\tgetRecentNearby.run()\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_utils.setSelectedBird",
+  "id": "Page1_mapUtils.handleCreateMarker",
   "deleted": false,
-  "gitSyncId": "625706350d3d384069c08790_625859e90d3d384069c0ed26"
+  "gitSyncId": "625706350d3d384069c08790_62584f1d0d3d384069c0e7d4"
 }

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "handleMarkerClick",
-    "fullyQualifiedName": "mapUtils.handleMarkerClick",
+    "name": "getPageId",
+    "fullyQualifiedName": "apis.getPageId",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_mapUtils",
+    "collectionId": "Page1_apis",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst [ bird ] = getRecentNearby.data.filter((entry) => {\n\t\t\treturn entry.comName === Locator.selectedMarker.title\n\t\t})\n\t\tawait utils.setSelectedBird(bird)\n\t}",
+      "body": "async() => {\n\t\tconst searchRes = await getPageId.run()\n\t\treturn searchRes.query.search[0].pageid\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst [ bird ] = getRecentNearby.data.filter((entry) => {\n\t\t\treturn entry.comName === Locator.selectedMarker.title\n\t\t})\n\t\tawait utils.setSelectedBird(bird)\n\t}"
+      "async() => {\n\t\tconst searchRes = await getPageId.run()\n\t\treturn searchRes.query.search[0].pageid\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_mapUtils.handleMarkerClick",
+  "id": "Page1_apis.getPageId",
   "deleted": false,
-  "gitSyncId": "625706350d3d384069c08790_625840a30d3d384069c0e3cc"
+  "gitSyncId": "625706350d3d384069c08790_6258474d0d3d384069c0e5ab"
 }

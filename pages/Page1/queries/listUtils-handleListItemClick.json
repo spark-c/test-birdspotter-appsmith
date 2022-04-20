@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getTextData",
-    "fullyQualifiedName": "apis.getTextData",
+    "name": "handleListItemClick",
+    "fullyQualifiedName": "listUtils.handleListItemClick",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,13 +14,17 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_apis",
+    "collectionId": "Page1_listUtils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst textDataRes = await getTextInfo.run()\n\t\tconst text = textDataRes.query.pages[appsmith.store.selectedBirdId.toString()].extract\n\t\tconsole.log(text)\n\t\treturn text\n\t}",
-      "jsArguments": [],
+      "body": "async(bird) => {\n\t\tawait utils.setSelectedBird(bird)\n\t\t\n\t}",
+      "jsArguments": [
+        {
+          "name": "bird"
+        }
+      ],
       "isAsync": true
     },
     "executeOnLoad": false,
@@ -33,14 +37,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst textDataRes = await getTextInfo.run()\n\t\tconst text = textDataRes.query.pages[appsmith.store.selectedBirdId.toString()].extract\n\t\tconsole.log(text)\n\t\treturn text\n\t}"
+      "async(bird) => {\n\t\tawait utils.setSelectedBird(bird)\n\t\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_apis.getTextData",
+  "id": "Page1_listUtils.handleListItemClick",
   "deleted": false,
-  "gitSyncId": "625706350d3d384069c08790_625848130d3d384069c0e5f0"
+  "gitSyncId": "625706350d3d384069c08790_62585ae20d3d384069c0ed6f"
 }
