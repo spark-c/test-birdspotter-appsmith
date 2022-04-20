@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst searchRes = await getPageId.run()\n\t\treturn searchRes.query.search[0].pageid\n\t}",
+      "body": "async() => {\n\t\tconst searchRes = await api_getPageId.run()\n\t\treturn searchRes.query.search[0].pageid\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst searchRes = await getPageId.run()\n\t\treturn searchRes.query.search[0].pageid\n\t}"
+      "async() => {\n\t\tconst searchRes = await api_getPageId.run()\n\t\treturn searchRes.query.search[0].pageid\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

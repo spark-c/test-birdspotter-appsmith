@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst textDataRes = await getTextInfo.run()\n\t\tconst text = textDataRes.query.pages[appsmith.store.selectedBirdId.toString()].extract\n\t\tconsole.log(text)\n\t\treturn text\n\t}",
+      "body": "async() => {\n\t\tconst textDataRes = await api_getTextInfo.run()\n\t\tconst text = textDataRes.query.pages[appsmith.store.selectedBirdId.toString()].extract\n\t\tconsole.log(text)\n\t\treturn text\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst textDataRes = await getTextInfo.run()\n\t\tconst text = textDataRes.query.pages[appsmith.store.selectedBirdId.toString()].extract\n\t\tconsole.log(text)\n\t\treturn text\n\t}"
+      "async() => {\n\t\tconst textDataRes = await api_getTextInfo.run()\n\t\tconst text = textDataRes.query.pages[appsmith.store.selectedBirdId.toString()].extract\n\t\tconsole.log(text)\n\t\treturn text\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

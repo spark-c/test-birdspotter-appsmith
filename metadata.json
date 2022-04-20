@@ -5,6 +5,26 @@
   "publishedDefaultPageName": "Page1",
   "unpublishedDefaultPageName": "Page1",
   "invisibleActionFields": {
+    "Page1_api_getEntityId": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_api_getImgTitle": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_api_getPageId": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_api_getRecentNearby": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Page1_api_getTextInfo": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "Page1_apis.getEntityId": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
@@ -22,14 +42,6 @@
       "publishedUserSetOnLoad": false
     },
     "Page1_apis.getTextData": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "Page1_getRecentNearby": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "Page1_getTextInfo": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },

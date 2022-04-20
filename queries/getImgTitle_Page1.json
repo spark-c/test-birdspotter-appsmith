@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst imgTitleRes = await getImgTitle.run()\n\t\tconst imgTitle = imgTitleRes.claims.P18[0].mainsnak.datavalue.value\n\t\tawait storeValue(\"selectedBirdImgTitle\", imgTitle)\n\t\treturn imgTitle\n\t}",
+      "body": "async () => {\n\t\tconst imgTitleRes = await api_getImgTitle.run()\n\t\tconst imgTitle = imgTitleRes.claims.P18[0].mainsnak.datavalue.value\n\t\tawait storeValue(\"selectedBirdImgTitle\", imgTitle)\n\t\treturn imgTitle\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst imgTitleRes = await getImgTitle.run()\n\t\tconst imgTitle = imgTitleRes.claims.P18[0].mainsnak.datavalue.value\n\t\tawait storeValue(\"selectedBirdImgTitle\", imgTitle)\n\t\treturn imgTitle\n\t}"
+      "async () => {\n\t\tconst imgTitleRes = await api_getImgTitle.run()\n\t\tconst imgTitle = imgTitleRes.claims.P18[0].mainsnak.datavalue.value\n\t\tawait storeValue(\"selectedBirdImgTitle\", imgTitle)\n\t\treturn imgTitle\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

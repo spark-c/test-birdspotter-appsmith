@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1274,
+          "rightColumn": 1280,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -20,7 +20,7 @@
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 56,
-          "minHeight": 880,
+          "minHeight": 840,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
@@ -392,7 +392,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "djyooqazjs",
               "isVisibleFilters": true,
-              "tableData": "{{(getRecentNearby.data.errors) ? [] : getRecentNearby.data}}",
+              "tableData": "{{(api_getRecentNearby.data.errors) ? [] : api_getRecentNearby.data}}",
               "isVisible": false,
               "label": "Data",
               "searchKey": "",
@@ -435,7 +435,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "{{appsmith.store.selectedBirdText? appsmith.store.selectedBirdText: \"1. Click on the map to create a marker\\n2. A new set of markers will appear with nearby bird sightings, and you can also find those birds in the buttons below!\\n3. Click one of the map markers or one of the buttons to see more information about that bird.\"}}",
+              "text": "{{appsmith.store.selectedBirdText? appsmith.store.selectedBirdText: \"#Instructions\\n\\n1. Click on the map to create a marker\\n\\n2. A new set of markers will appear with nearby bird sightings, and you can also find those birds in the buttons below!\\n\\n3. Click one of the map markers or one of the buttons to see more information about that bird.\"}}",
               "key": "81m3wdyv8i",
               "rightColumn": 63,
               "textAlign": "LEFT",
@@ -2457,8 +2457,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_getRecentNearby",
-              "name": "getRecentNearby",
+              "id": "Page1_api_getRecentNearby",
+              "name": "api_getRecentNearby",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [

@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(columnIndex) => {\n\t\tconst data = getRecentNearby.data\n\t\tconst items = [data[columnIndex], data[columnIndex + 5]]\n\t\tconst results = items.map((item) => {\n\t\t\treturn {\n\t\t\t\t...item,\n\t\t\t\timg: \"\"\n\t\t\t}\n\t\t})\n\t\treturn results\n\t}",
+      "body": "(columnIndex) => {\n\t\tconst data = api_getRecentNearby.data\n\t\tconst items = [data[columnIndex], data[columnIndex + 5]]\n\t\tconst results = items.map((item) => {\n\t\t\treturn {\n\t\t\t\t...item,\n\t\t\t\timg: \"\"\n\t\t\t}\n\t\t})\n\t\treturn results\n\t}",
       "jsArguments": [
         {
           "name": "columnIndex"
@@ -37,7 +37,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(columnIndex) => {\n\t\tconst data = getRecentNearby.data\n\t\tconst items = [data[columnIndex], data[columnIndex + 5]]\n\t\tconst results = items.map((item) => {\n\t\t\treturn {\n\t\t\t\t...item,\n\t\t\t\timg: \"\"\n\t\t\t}\n\t\t})\n\t\treturn results\n\t}"
+      "(columnIndex) => {\n\t\tconst data = api_getRecentNearby.data\n\t\tconst items = [data[columnIndex], data[columnIndex + 5]]\n\t\tconst results = items.map((item) => {\n\t\t\treturn {\n\t\t\t\t...item,\n\t\t\t\timg: \"\"\n\t\t\t}\n\t\t})\n\t\treturn results\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

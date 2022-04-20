@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst entityIdRes = await getEntityId.run()\n\t\tconst entityId = entityIdRes.query.pages[appsmith.store.selectedBirdId].pageprops.wikibase_item\n\t\tawait storeValue(\"selectedBirdEntityId\", entityId)\n\t\treturn entityId\n\t}",
+      "body": "async () => {\n\t\tconst entityIdRes = await api_getEntityId.run()\n\t\tconst entityId = entityIdRes.query.pages[appsmith.store.selectedBirdId].pageprops.wikibase_item\n\t\tawait storeValue(\"selectedBirdEntityId\", entityId)\n\t\treturn entityId\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst entityIdRes = await getEntityId.run()\n\t\tconst entityId = entityIdRes.query.pages[appsmith.store.selectedBirdId].pageprops.wikibase_item\n\t\tawait storeValue(\"selectedBirdEntityId\", entityId)\n\t\treturn entityId\n\t}"
+      "async () => {\n\t\tconst entityIdRes = await api_getEntityId.run()\n\t\tconst entityId = entityIdRes.query.pages[appsmith.store.selectedBirdId].pageprops.wikibase_item\n\t\tawait storeValue(\"selectedBirdEntityId\", entityId)\n\t\treturn entityId\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

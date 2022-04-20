@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tconst markers = getRecentNearby.data.map((bird) => {\n\t\t\treturn {\n\t\t\t\t\t\"lat\": utils.fuzzy(bird.lat),\n\t\t\t\t\t\"long\": utils.fuzzy(bird.lng),\n\t\t\t\t\t\"title\": bird.comName,\n\t\t\t\t\t\"color\": Locator.selectedMarker == bird? \"#0000ff\":\"#ff0000\"\n\t\t\t\t}\n\t\t})\n\t\treturn markers.filter(x => (x.title))\n\t}",
+      "body": "() => {\n\t\tconst markers = api_getRecentNearby.data.map((bird) => {\n\t\t\treturn {\n\t\t\t\t\t\"lat\": utils.fuzzy(bird.lat),\n\t\t\t\t\t\"long\": utils.fuzzy(bird.lng),\n\t\t\t\t\t\"title\": bird.comName,\n\t\t\t\t\t\"color\": Locator.selectedMarker == bird? \"#0000ff\":\"#ff0000\"\n\t\t\t\t}\n\t\t})\n\t\treturn markers.filter(x => (x.title))\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tconst markers = getRecentNearby.data.map((bird) => {\n\t\t\treturn {\n\t\t\t\t\t\"lat\": utils.fuzzy(bird.lat),\n\t\t\t\t\t\"long\": utils.fuzzy(bird.lng),\n\t\t\t\t\t\"title\": bird.comName,\n\t\t\t\t\t\"color\": Locator.selectedMarker == bird? \"#0000ff\":\"#ff0000\"\n\t\t\t\t}\n\t\t})\n\t\treturn markers.filter(x => (x.title))\n\t}"
+      "() => {\n\t\tconst markers = api_getRecentNearby.data.map((bird) => {\n\t\t\treturn {\n\t\t\t\t\t\"lat\": utils.fuzzy(bird.lat),\n\t\t\t\t\t\"long\": utils.fuzzy(bird.lng),\n\t\t\t\t\t\"title\": bird.comName,\n\t\t\t\t\t\"color\": Locator.selectedMarker == bird? \"#0000ff\":\"#ff0000\"\n\t\t\t\t}\n\t\t})\n\t\treturn markers.filter(x => (x.title))\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

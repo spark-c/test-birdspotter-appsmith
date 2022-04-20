@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getTextInfo",
+    "name": "api_getTextInfo",
     "datasource": {
       "pluginId": "restapi-plugin",
       "messages": [],
@@ -64,7 +64,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_getTextInfo",
+  "id": "Page1_api_getTextInfo",
   "deleted": false,
   "gitSyncId": "625706350d3d384069c08790_625725150d3d384069c0920a"
 }

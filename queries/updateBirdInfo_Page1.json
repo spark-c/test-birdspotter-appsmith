@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst pageId = await apis.getPageId()\n\t\tawait storeValue(\"selectedBirdId\", pageId)\n\t\tconst textData = await apis.getTextData()\n\t\tawait storeValue(\"selectedBirdText\", textData)\n\t\tconst entityId = await apis.getEntityId()\n\t\tconst imgTitle = await apis.getImgTitle()\n\t\tconsole.log(\"bird info updated\")\n\t}",
+      "body": "async() => {\n\t\tconst pageId = await apis.getPageId()\n\t\tawait storeValue(\"selectedBirdId\", pageId)\n\t\tconst textData = await apis.getTextData()\n\t\tawait storeValue(\"selectedBirdText\", textData)\n\t\tconst entityId = await apis.getEntityId()\n\t\tconst imgTitle = await apis.getImgTitle()\n\t\tconsole.log(\"bird info updated\")\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst pageId = await apis.getPageId()\n\t\tawait storeValue(\"selectedBirdId\", pageId)\n\t\tconst textData = await apis.getTextData()\n\t\tawait storeValue(\"selectedBirdText\", textData)\n\t\tconst entityId = await apis.getEntityId()\n\t\tconst imgTitle = await apis.getImgTitle()\n\t\tconsole.log(\"bird info updated\")\n\t}"
+      "async() => {\n\t\tconst pageId = await apis.getPageId()\n\t\tawait storeValue(\"selectedBirdId\", pageId)\n\t\tconst textData = await apis.getTextData()\n\t\tawait storeValue(\"selectedBirdText\", textData)\n\t\tconst entityId = await apis.getEntityId()\n\t\tconst imgTitle = await apis.getImgTitle()\n\t\tconsole.log(\"bird info updated\")\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

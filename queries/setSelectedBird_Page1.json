@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async (bird) => {\n\t\tawait storeValue(\"selectedBird\", bird)\n\t\tawait utils.updateBirdInfo()\n\t}",
+      "body": "async(bird) => {\n\t\tawait storeValue(\"selectedBird\", bird)\n\t\tawait utils.updateBirdInfo()\n\t}",
       "jsArguments": [
         {
           "name": "bird"
@@ -37,7 +37,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async (bird) => {\n\t\tawait storeValue(\"selectedBird\", bird)\n\t\tawait utils.updateBirdInfo()\n\t}"
+      "async(bird) => {\n\t\tawait storeValue(\"selectedBird\", bird)\n\t\tawait utils.updateBirdInfo()\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

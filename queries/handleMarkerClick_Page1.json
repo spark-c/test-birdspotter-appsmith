@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\tconst [ bird ] = getRecentNearby.data.filter((entry) => {\n\t\t\treturn entry.comName === Locator.selectedMarker.title\n\t\t})\n\t\tawait utils.setSelectedBird(bird)\n\t}",
+      "body": "async() => {\n\t\tconst [ bird ] = api_getRecentNearby.data.filter((entry) => {\n\t\t\treturn entry.comName === Locator.selectedMarker.title\n\t\t})\n\t\tawait utils.setSelectedBird(bird)\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\tconst [ bird ] = getRecentNearby.data.filter((entry) => {\n\t\t\treturn entry.comName === Locator.selectedMarker.title\n\t\t})\n\t\tawait utils.setSelectedBird(bird)\n\t}"
+      "async() => {\n\t\tconst [ bird ] = api_getRecentNearby.data.filter((entry) => {\n\t\t\treturn entry.comName === Locator.selectedMarker.title\n\t\t})\n\t\tawait utils.setSelectedBird(bird)\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
