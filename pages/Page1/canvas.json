@@ -2451,6 +2451,41 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "fontSize": "PARAGRAPH2"
+            },
+            {
+              "widgetName": "Text3",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 75,
+              "bottomRow": 79,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 39,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{appsmith.store.selectedBirdId? appsmith.store.selectedBirdId:\"None\"}}",
+              "key": "bxlti9l8q7",
+              "rightColumn": 55,
+              "textAlign": "LEFT",
+              "widgetId": "6d5sqp9yiq",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
             }
           ]
         },
@@ -2503,6 +2538,7 @@
           "Text1Copy1Copy2",
           "Text1Copy1Copy2Copy",
           "Text2",
+          "Text3",
           "TextReference"
         ],
         "validOnPageLoadActions": true,
