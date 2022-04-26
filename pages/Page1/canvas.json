@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1280,
+          "rightColumn": 1160,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 56,
+          "version": 57,
           "minHeight": 880,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -96,9 +96,9 @@
                 "lat",
                 "lng",
                 "obsValid",
+                "subId",
                 "obsReviewed",
-                "locationPrivate",
-                "subId"
+                "locationPrivate"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -161,7 +161,7 @@
                   "key": "defaultSelectedRow"
                 }
               ],
-              "leftColumn": 2,
+              "leftColumn": 4,
               "primaryColumns": {
                 "speciesCode": {
                   "index": 0,
@@ -388,7 +388,7 @@
               "delimiter": ",",
               "key": "rtv43izxqp",
               "derivedColumns": {},
-              "rightColumn": 33,
+              "rightColumn": 35,
               "textSize": "PARAGRAPH",
               "widgetId": "djyooqazjs",
               "isVisibleFilters": true,
